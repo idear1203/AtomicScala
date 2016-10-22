@@ -15,14 +15,14 @@ val family2 = new Family("Dad", "Mom", "Harry")
 family2.familySize() is 3
 
 // 2.
-class FlexibleFamily(father: String, mother: String, kids: String*) {
+class FlexibleFamily(dad: String, mom: String, kids: String*) {
     def familySize(): Int = {
         var count = 0;
-        if (father != null) {
+        if (dad != null) {
             count += 1
         }
 
-        if (mother != null) {
+        if (mom != null) {
             count += 1
         }
 
