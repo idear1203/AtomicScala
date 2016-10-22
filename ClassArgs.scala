@@ -30,9 +30,9 @@ class FlexibleFamily(dad: String, mom: String, kids: String*) {
     }
 }
 
-val family3 = new Family("Mom", "Dad", "Sally", "Dick")
+val family3 = new FlexibleFamily("Mom", "Dad", "Sally", "Dick")
 family1.familySize() is 4
-val family4 = new Family("Dad", "Mom", "Harry")
+val family4 = new FlexibleFamily("Dad", "Mom", "Harry")
 family2.familySize() is 3
 
 // 3.
