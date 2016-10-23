@@ -38,7 +38,7 @@ def forecast(extent: Int): String = {
     }
 }
 
-// TODO
+// TODO: generalization
 def historicalData(weather: Vector[Int]):String = {
     var sunnyCount = 0
     var mostlySunnyCount = 0
