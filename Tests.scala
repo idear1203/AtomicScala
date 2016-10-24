@@ -20,7 +20,6 @@ myValue2 is myValue3
 // 4.
 val myValue5 = "10"
 
-// Matched, this test framework is string based.
 myValue2 is myValue5
 
 // 5.
