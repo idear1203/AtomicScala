@@ -2,9 +2,13 @@
 
 // 1.
 class Hippo
+
 class Lion
+
 class Tiger
+
 class Monkey
+
 class Giraffe
 
 val hippo = new Hippo
@@ -30,7 +34,7 @@ println(giraffe3)
 
 // 3.
 class Zebra {
-    println("I have stripes")
+  println("I have stripes")
 }
 
 val zebra = new Zebra

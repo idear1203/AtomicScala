@@ -6,11 +6,21 @@ import com.atomicscala.AtomicTest._
 
 // 2.
 
-def f(): Int = { 0 }
-def f(num1: Int): Int = { num1 }
-def f(num1: Int, num2: Int): Int = { num1 + num2 }
-def f(num1: Int, num2: Int, num3: Int): Int = { num1 + num2 + num3 }
-def f(num1: Int, num2: Int, num3: Int, num4: Int): Int = { num1 + num2 + num3 + num4 }
+def f(): Int = {
+  0
+}
+def f(num1: Int): Int = {
+  num1
+}
+def f(num1: Int, num2: Int): Int = {
+  num1 + num2
+}
+def f(num1: Int, num2: Int, num3: Int): Int = {
+  num1 + num2 + num3
+}
+def f(num1: Int, num2: Int, num3: Int, num4: Int): Int = {
+  num1 + num2 + num3 + num4
+}
 
 f() is 0
 f(1) is 1
@@ -20,11 +30,25 @@ f(1, 2, 3, 4) is 10
 
 // 3.
 class NumberAdder {
-    def f(): Int = { 0 }
-    def f(num1: Int): Int = { num1 }
-    def f(num1: Int, num2: Int): Int = { num1 + num2 }
-    def f(num1: Int, num2: Int, num3: Int): Int = { num1 + num2 + num3 }
-    def f(num1: Int, num2: Int, num3: Int, num4: Int): Int = { num1 + num2 + num3 + num4 }
+  def f(): Int = {
+    0
+  }
+
+  def f(num1: Int): Int = {
+    num1
+  }
+
+  def f(num1: Int, num2: Int): Int = {
+    num1 + num2
+  }
+
+  def f(num1: Int, num2: Int, num3: Int): Int = {
+    num1 + num2 + num3
+  }
+
+  def f(num1: Int, num2: Int, num3: Int, num4: Int): Int = {
+    num1 + num2 + num3 + num4
+  }
 }
 
 val adder = new NumberAdder

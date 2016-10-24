@@ -17,25 +17,25 @@ result is "1 3 5 7 9 2 4 6 8 10 "
 val v5 = Vector("The", "dog", "visited", "the", "firehouse")
 var sentence = ""
 for (word <- v5) {
-    sentence += word + " "
+  sentence += word + " "
 }
 
 sentence.toString() is
-    "The dog visited the firehouse "
+  "The dog visited the firehouse "
 
 // 4.
 val theString = sentence.replace(" firehouse ", " firehouse!")
-theString is 
-    "The dog visited the firehouse!"
+theString is
+  "The dog visited the firehouse!"
 
 // 5.
 for (word <- v5) {
-    println(word.reverse)
+  println(word.reverse)
 }
 
 // 6.
 for (word <- v5.reverse) {
-    println(word)
+  println(word)
 }
 
 // 7.
@@ -58,7 +58,7 @@ v3.max is "world"
 // 9.
 val r1 = Range(0, 5).inclusive
 for (number <- r1) {
-    r1.sum is 15
+  r1.sum is 15
 }
 
 // 10 - 11.

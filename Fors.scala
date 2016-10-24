@@ -13,7 +13,7 @@ r2 is "Range(0, 1, 2, 3, 4, 5, 6, 7, 8, 9)"
 // 3.
 var total = 0
 for (i <- Range(0, 10).inclusive) {
-    total += i
+  total += i
 }
 
 total is 55
@@ -21,9 +21,9 @@ total is 55
 // 4.
 var totalEvents = 0
 for (number <- Range(0, 10).inclusive) {
-    if (number % 2 == 0) {
-        totalEvents += number
-    }
+  if (number % 2 == 0) {
+    totalEvents += number
+  }
 }
 
 totalEvents is 30
@@ -32,11 +32,11 @@ totalEvents is 30
 var evens = 0
 var odds = 0
 for (number <- Range(0, 10).inclusive) {
-    if (number % 2 == 0) {
-        evens += number
-    } else {
-        odds += number
-    }
+  if (number % 2 == 0) {
+    evens += number
+  } else {
+    odds += number
+  }
 }
 
 evens is 30
@@ -47,11 +47,11 @@ odds is 25
 evens = 0
 odds = 0
 for (number <- 0 to 10) {
-    if (number % 2 == 0) {
-        evens += number
-    } else {
-        odds += number
-    }
+  if (number % 2 == 0) {
+    evens += number
+  } else {
+    odds += number
+  }
 }
 
 evens is 30

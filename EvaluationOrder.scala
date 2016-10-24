@@ -11,12 +11,12 @@ println(happy1) //false
 
 // 2.
 val happy2 = (sunny || partlyCloudy) &&
-    temp > 80
+  temp > 80
 println(happy2) //false
 
 // 3.
 val happy3 = (sunny || partlyCloudy) &&
-    (temp > 80 || temp < 20)
+  (temp > 80 || temp < 20)
 println(happy2) //false
 
 // 4.

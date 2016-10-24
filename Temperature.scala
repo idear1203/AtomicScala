@@ -4,27 +4,32 @@ import com.atomicscala.AtomicTest._
 class Temperature {
   var current = 0.0
   var scale = "f"
-  def setFahrenheit(now:Double):Unit = {
+
+  def setFahrenheit(now: Double): Unit = {
     current = now
     scale = "f"
   }
-  def setCelsius(now:Double):Unit = {
+
+  def setCelsius(now: Double): Unit = {
     current = now
     scale = "c"
   }
-  def getFahrenheit():Double = {
-    if(scale == "f")
+
+  def getFahrenheit(): Double = {
+    if (scale == "f")
       current
     else
-      current * 9.0/5.0 + 32.0
+      current * 9.0 / 5.0 + 32.0
   }
-  def getCelsius():Double = {
-    if(scale == "c")
+
+  def getCelsius(): Double = {
+    if (scale == "c")
       current
     else
-      (current - 32.0) * 5.0/9.0
+      (current - 32.0) * 5.0 / 9.0
   }
-  def getAbsolute():Double = {
+
+  def getAbsolute(): Double = {
     return getCelsius() + 273.15
   }
 }

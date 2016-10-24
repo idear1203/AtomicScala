@@ -27,9 +27,9 @@ v3.sorted.mkString(" ") is "hello world"
 val v4 = Vector(v1, v2, v3)
 var createdString = ""
 for (vector <- v4) {
-    for (element <- vector) {
-        createdString += element + " ";
-    }
+  for (element <- vector) {
+    createdString += element + " ";
+  }
 }
 
 createdString is "h e l l o 1 2 3 hello world "

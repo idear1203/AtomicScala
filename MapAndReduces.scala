@@ -5,17 +5,17 @@ import com.atomicscala.AtomicTest._
 // 1.
 val v = Vector(1, 2, 3, 4)
 v.map(_ * 11 + 10) is
-    Vector(21, 32, 43, 54)
+  Vector(21, 32, 43, 54)
 
 // 2.
 v.foreach(_ * 11 + 10) is
-    ()
+  ()
 
 // 3. 4. 5.
 
 // 6.
 def sumIt(nums: Int*) = {
-    nums.reduce((sum, x) => sum + x)
+  nums.reduce((sum, x) => sum + x)
 }
 
 sumIt(1, 2, 3) is 6

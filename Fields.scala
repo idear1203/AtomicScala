@@ -6,9 +6,10 @@ import com.atomicscala.AtomicTest._
 class Cup2 {
   var percentFull = 0
   val max = 100
-  def add(increase:Int):Int = {
+
+  def add(increase: Int): Int = {
     percentFull += increase
-    if(percentFull > max) {
+    if (percentFull > max) {
       percentFull = max
     }
     percentFull // Return this value
@@ -29,12 +30,13 @@ class Cup3 {
   var percentFull = 0
   val max = 100
   val min = 0
-  def add(increase:Int):Int = {
+
+  def add(increase: Int): Int = {
     percentFull += increase
-    if(percentFull > max) {
+    if (percentFull > max) {
       percentFull = max
     } else if (percentFull < min) {
-        percentFull = min
+      percentFull = min
     }
     percentFull // Return this value
   }

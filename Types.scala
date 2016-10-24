@@ -1,23 +1,24 @@
 //Types.scala
 
 // 1.
-val a:Int = 5
+val a: Int = 5
 println(a)
 
 // 2.
-val b:String = "ABC1234"
+val b: String = "ABC1234"
 println(b)
 
 // 3.
-val c:Double = 5.4
+val c: Double = 5.4
 println(c)
 
 // 4.
-val d:Boolean = true
+val d: Boolean = true
 println(d)
 
 // 5.
-val e:String = """This is
+val e: String =
+  """This is
 a multiple
 line string"""
 println(e)
@@ -31,5 +32,5 @@ println(e)
 // println(g);
 
 // 8. 15.0
-val h:Double = 15
+val h: Double = 15
 println(h);

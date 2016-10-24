@@ -4,27 +4,28 @@ import com.atomicscala.AtomicTest._
 
 // 1.
 case class Person(name: String)
+
 def plus1(x: Any): Any = {
-    x match {
-        case str: String => s"${str}s"
-        case num: Int => num + 1
-        case p: Person => s"$p + guest"
-        case _ => "What the hell is it?"
-    }
+  x match {
+    case str: String => s"${str}s"
+    case num: Int => num + 1
+    case p: Person => s"$p + guest"
+    case _ => "What the hell is it?"
+  }
 }
 plus1("car") is "cars"
 plus1(67) is 68
 plus1(Person("Joanna")) is
-    "Person(Joanna) + guest"
+  "Person(Joanna) + guest"
 
 // 2.
 def convertToSize(x: Any): Any = {
-    x match {
-        case str: String => str.length
-        case _: Int | _: Double | _: Float => x
-        case _: Person => 1
-        case _ => 0
-    }
+  x match {
+    case str: String => str.length
+    case _: Int | _: Double | _: Float => x
+    case _: Person => 1
+    case _ => 0
+  }
 }
 
 convertToSize(45) is 45
@@ -36,13 +37,13 @@ convertToSize(Vector(1, 2, 3)) is 0
 
 // 3.
 def convertToSize2(x: Any): Int = {
-    x match {
-        case str: String => str.length
-        case n: Int => n
-        case f: Float => math.round(f)
-        case _: Person => 1
-        case _ => 0
-    }
+  x match {
+    case str: String => str.length
+    case n: Int => n
+    case f: Float => math.round(f)
+    case _: Person => 1
+    case _ => 0
+  }
 }
 
 convertToSize2(45) is 45
@@ -54,15 +55,15 @@ convertToSize2(Vector(1, 2, 3)) is 0
 
 // 4.
 def quantify(x: Any): String = {
-    x match {
-        case i: Int if (i < 100) => "small"
-        case i: Int if (i <= 1000) => "medium"
-        case i: Int => "large"
-        case d: Double if (d < 100) => "small"
-        case d: Double if (d <= 1000) => "medium"
-        case d: Double => "large"
-        case _ => "Unknown"
-    }
+  x match {
+    case i: Int if (i < 100) => "small"
+    case i: Int if (i <= 1000) => "medium"
+    case i: Int => "large"
+    case d: Double if (d < 100) => "small"
+    case d: Double if (d <= 1000) => "medium"
+    case d: Double => "large"
+    case _ => "Unknown"
+  }
 }
 
 quantify(100) is "medium"
@@ -72,15 +73,15 @@ quantify(-15999) is "small"
 
 // 5.
 def forecast(percentage: Int): String = {
-    percentage match {
-        case p if (p < 0 || p > 100) => "Unknown"
-        case p if (p == 0) => "Cloudy"
-        case p if (p <= 20) => "Mostly Cloudy"
-        case p if (p <= 50) => "Partly Sunny"
-        case p if (p <= 80) => "Mostly Sunny"
-        case p if (p <= 100) => "Sunny"
-        case _ => "Unknown"
-    }
+  percentage match {
+    case p if (p < 0 || p > 100) => "Unknown"
+    case p if (p == 0) => "Cloudy"
+    case p if (p <= 20) => "Mostly Cloudy"
+    case p if (p <= 50) => "Partly Sunny"
+    case p if (p <= 80) => "Mostly Sunny"
+    case p if (p <= 100) => "Sunny"
+    case _ => "Unknown"
+  }
 }
 
 forecast(100) is "Sunny"

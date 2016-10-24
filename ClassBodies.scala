@@ -11,6 +11,7 @@ class NoBody {
 class SomeBody {
   val name = "Janet Doe"
   println(name + " is SomeBody")
+
   def className = {
     this.getClass.getSimpleName
   }
@@ -19,6 +20,7 @@ class SomeBody {
 class EveryBody {
   val all = Vector(new SomeBody,
     new SomeBody, new SomeBody)
+
   def className = {
     this.getClass.getSimpleName
   }
