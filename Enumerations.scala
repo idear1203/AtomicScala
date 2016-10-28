@@ -68,3 +68,34 @@ season(August) is "Summer"
 season(November) is "Autumn"
 
 // 5.
+
+// 6.
+object Level extends Enumeration {
+  type Level = Value
+  val Overflow,
+      High,
+      Medium,
+      Low,
+      Empty = Value
+
+  val Draining,
+      Pooling,
+      Dry = Value
+}
+
+import Level._
+
+def checkLevel(level: Level) = level match {
+  case Overflow => ">>> Overflow!"
+  case Empty | Dry => "Alert"
+  case Pooling => "Warning!"
+  case other => s"Level $level OK"
+}
+
+Level.Draining is Draining
+Level.Draining.id is 5
+checkLevel(Low) is "Level Low OK"
+checkLevel(Empty) is "Alert"
+checkLevel(Draining) is "Level Draining OK"
+checkLevel(Pooling) is "Warning!"
+checkLevel(Dry) is "Alert"
