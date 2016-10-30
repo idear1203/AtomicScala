@@ -63,3 +63,27 @@ class NumericAdder(val x:Int) extends Adder(x) {
 
 val num = new NumericAdder(5)
 num.add(10) is 15
+
+// 4. 
+case class caseAdder(x: Int) {
+  def add(y: Int): Int = {
+    x + 2 * y
+  }
+}
+
+val adder = new caseAdder(5)
+adder.add(10) is 25
+
+// 5.
+class Bee extends Animal {
+  def animal(name: String): String =
+    animal + ": " + name
+  def sound: String = "Weng"
+  def food: String = "plant"
+  def animal: String = "Bee"
+}
+
+val bee = new Bee
+bee.animal("DaHuangFeng") is "Bee: DaHuangFeng"
+bee.sound is "Weng"
+bee.food is "plant"
