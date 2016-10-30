@@ -39,4 +39,4 @@ trait Concrete {
 
 val x = new AllAbstract with
   PartialAbstract with Concrete with Name
-x is "anno"
+x is "anon"
