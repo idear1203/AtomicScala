@@ -1,3 +1,5 @@
 *.class
 _AtomicTestErrors.txt
 .DS_Store
+.ensime
+.ensime_cache
