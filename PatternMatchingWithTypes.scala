@@ -1,4 +1,4 @@
-// PatternMatchingWithTypes.scala
+// PatternMatchingwithTypes.scala
 
 import com.atomicscala.AtomicTest._
 
