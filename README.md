@@ -1,3 +1,3 @@
-# Solution of "Atomic Scala"
+# Atomic Scala Solutions
 
-This repository consists of my solutions for the book titled "Atomic Scala - Learn Programming in a Language of the Future Second Edition" 
+Solutions to the exercises in "Atomic Scala" by Aaron.
