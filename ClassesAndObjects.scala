@@ -1,4 +1,4 @@
-// Classes.scala
+// ClassesAndObjects.scala
 
 // 1.
 val r1 = Range(0, 10)

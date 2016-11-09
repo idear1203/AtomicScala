@@ -1,4 +1,4 @@
-// MehtodsOfClasses.scala
+// MethodsInsideClasses.scala
 
 // 1.
 class Sailboat {

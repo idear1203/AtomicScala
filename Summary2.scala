@@ -1,4 +1,4 @@
-// Review2.scala
+// Summary2.scala
 
 import com.atomicscala.AtomicTest._
 import com.atomicscala.exercise.BasicMethods

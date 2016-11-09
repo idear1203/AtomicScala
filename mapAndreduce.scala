@@ -1,4 +1,4 @@
-// MapAndReduces.scala
+// mapAndreduce.scala
 
 import com.atomicscala.AtomicTest._
 

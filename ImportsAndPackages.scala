@@ -1,8 +1,6 @@
-// EquilateralTriangle.scala
+// ImportsAndPackages.scala
 
 //2.
-//pacakge com.atomicscala.shape
-
 class EquilateralTriangle {
   def area(side: Double): Double = {
     math.sqrt(3) / 4.0 * side * side

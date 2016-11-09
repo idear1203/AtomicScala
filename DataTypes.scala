@@ -1,4 +1,4 @@
-//Types.scala
+//DataTypes.scala
 
 // 1.
 val a: Int = 5

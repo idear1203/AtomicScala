@@ -1,4 +1,4 @@
-// Animal.scala
+// CreatingClasses.scala
 
 // 1.
 class Hippo

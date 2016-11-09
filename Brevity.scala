@@ -1,4 +1,4 @@
-// Brivity.scala
+// Brevity.scala
 
 import com.atomicscala.AtomicTest._
 

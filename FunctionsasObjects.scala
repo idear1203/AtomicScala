@@ -1,4 +1,4 @@
-// FunctionAsObjects.scala
+// FunctionsasObjects.scala
 
 import com.atomicscala.AtomicTest._
 

@@ -1,4 +1,4 @@
-// Tests.scala
+// Testing.scala
 
 import com.atomicscala.AtomicTest._
 

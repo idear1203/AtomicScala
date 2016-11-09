@@ -1,4 +1,4 @@
-// Fors.scala
+// ForLoops.scala
 
 import com.atomicscala.AtomicTest._
 

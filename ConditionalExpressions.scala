@@ -1,4 +1,4 @@
-// Ifs.scala
+// ConditionalExpressions.scala
 
 // 1.
 val a: Int = 1

@@ -1,4 +1,4 @@
-// MoreExpressions.scala
+// MoreConditionals.scala
 
 import com.atomicscala.AtomicTest._
 

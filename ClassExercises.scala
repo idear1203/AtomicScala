@@ -1,4 +1,4 @@
-// ClassExercise.scala
+// ClassExercises.scala
 
 import com.atomicscala.AtomicTest._
 
